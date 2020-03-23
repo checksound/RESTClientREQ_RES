@@ -12,7 +12,8 @@ Nell'esempio [UsersHttpClient](./src/UsersHttpClient.java) è possibile fare ric
 public static void doGetRequest() throws Exception {
 		
 		var client = HttpClient.newBuilder().build();
-		var request = HttpRequest.newBuilder().GET().uri(URI.create("https://reqres.in/api/users?page=2")).build();
+		var request = HttpRequest.newBuilder().GET()
+		.uri(URI.create("https://reqres.in/api/users?page=2")).build();
 
 		var response = client.send(request, BodyHandlers.ofString());
 		out.printf("Response code is: %d %n", response.statusCode());
