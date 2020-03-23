@@ -1,4 +1,4 @@
-# Client REST servizi REQ | RES
+# Client REST al servizio REQ | RES
 
 Il servizio di test [REQ | RES](https://reqres.in/)
 
